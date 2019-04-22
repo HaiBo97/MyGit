@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全屏轮播图模块</title>
+    <link rel="stylesheet" href="./css/Swiper-banner.css">
+</head>
+<body>
+    <div class="swiper-banner">
+        <div class="swiper-main">
+            <a href=""><img src="./images/4.png" alt=""></a>
+            <a href=""><img src="./images/1.png" alt=""></a>
+            <a href=""><img src="./images/2.png" alt=""></a>
+            <a href=""><img src="./images/3.png" alt=""></a>
+            <a href=""><img src="./images/4.png" alt=""></a>
+            <a href=""><img src="./images/1.png" alt=""></a>
+        </div>     
+    </div>
+    <script src="./js/Swiper-min.js"></script>
+    <script>
+        var swiperMain = document.getElementsByClassName('swiper-main')[0];
+        var oImg = document.getElementsByTagName('img')[0];
+        var nowLeft = swiperMain.offsetLeft;
+        var nowWidth = swiperMain.offsetWidth;
+        var nowSpeed = oImg.offsetWidth;
+        var oSetInterval = setInterval(swiperItemTurn,2000,swiperMain,nowLeft,nowWidth,nowSpeed);
+
+    </script>
+</body>
+</html>

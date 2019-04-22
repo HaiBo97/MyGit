@@ -1,0 +1,53 @@
+body,div,ul,li{
+    margin: 0%;
+    padding: 0%;
+}
+.service{
+    width: 100%;
+    height: 518px;
+    background-color: #f8f8f8;
+}
+.service-center{
+    width: 1225px;
+    height: 518px;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+.service-title{
+    width: 1225px;
+    height: 184px;
+    line-height: 184px;
+    text-align: center;
+    font-size: 26px;
+}
+.service-item{
+    width: 1225px;
+    height: 244px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #fff; */
+}
+.service-list{
+    width: 170px;
+    height: 244px;
+    position: relative;
+    background-color: #ffffff;
+}
+.service-msg{
+    width: 170px;
+    height: 70px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+.service-msg span{
+    display: block;
+}
+.service-msg span:first-child{
+    font-size: 18px;
+}
+.service-msg span:last-child{
+    color: #606060;
+}

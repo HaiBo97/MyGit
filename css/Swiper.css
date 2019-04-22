@@ -1,0 +1,79 @@
+body,div,ul,li,a{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+.swiper{
+    position: relative;
+    /* width: 100vw; */
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+.swiper-main{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    left: -100vw;
+    width: 600vw;
+    /* left: 100%; */
+    /* width: 600px; */
+    height: 550px;
+    font-size: 0;
+}
+.swiper-main a{
+    display: block;
+    width: 100vw;
+    /* width: 100%; */
+    height: 550px;
+}
+.swiper-main img{
+    width: 100vw;
+    /* width: 100%; */
+    height: 550px;
+}
+
+/* 轮播图下方方块 */
+.swiper-list{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+    font-style: 0;
+}
+.swiper-list li{
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.swiper-list .active{
+    background-color: #1e90ff;
+}
+/* 轮播图两边按钮 */
+.swiper-btn{
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    bottom: 50%;
+    margin-bottom: -45px;
+    color: #fff;
+    font-size: 42px;
+    background: rgba(0, 0,0, 0.2)
+}
+.swiper:hover .swiper-btn{
+    display: inline-block;
+}
+#prev{
+    left: 100px;
+}
+#next{
+    right: 100px;
+}

@@ -1,0 +1,27 @@
+body,div{
+    margin: 0%;
+    padding: 0%;
+}
+.swiper-banner{
+    width: 100%;
+    height: 376px;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-main{
+    position: absolute;
+    width: 600%;
+    display: flex;
+    left: -100%;
+    transition: left 2s;
+    justify-content: flex-start;
+}
+.swiper-main a{
+    display: block;
+    width: 100%;
+    height: 376px;
+}
+.swiper-main img{
+    width: 100%;
+    height: 376px;
+}
